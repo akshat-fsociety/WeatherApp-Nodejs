@@ -24,6 +24,7 @@ const replaceVal = (tempVal, orgVal) => {
 const server = http.createServer((req, res) => {
   if (req.url == "/") {
     requests(
+      //Under construction to CHANGE THE CITY NAME edit the query below (q=cityname)
       `http://api.openweathermap.org/data/2.5/weather?q=delhi&units=metric&appid=b14425a6554d189a2d7dc18a8e7d7263`
     )
       .on("data", (chunk) => {
